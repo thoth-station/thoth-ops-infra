@@ -12,8 +12,8 @@ LABEL summary="$SUMMARY" \
 
 USER 0
 COPY ./ /tmp/s2i-thoth-dev
-RUN pip install --upgrade pip && \
-    /usr/bin/python3 -m pip install --upgrade pip && \
-    /usr/bin/python3 -m pip install --requirement /tmp/s2i-thoth-dev/requirements.txt
+RUN python3 -m pip install --upgrade pip && \
+    python3 -m pip install --upgrade pip && \
+    python3 -m pip install --requirement /tmp/s2i-thoth-dev/requirements.txt
 
 USER ${USERID}
