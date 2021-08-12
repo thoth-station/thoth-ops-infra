@@ -18,4 +18,12 @@ RUN  \
   /usr/bin/python3 -m pip install --upgrade pip &&\
   /usr/bin/python3 -m pip install --requirement /tmp/src-thoth-precommit/requirements.txt
 
+ARG OPA_VERSION="0.31.0"
+ARG CONFTEST_VERSION="0.21.0"
+RUN \
+    curl -L https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/conftest_${CONFTEST_VERSION}_Linux_x86_64.tar.gz | tar -xzf - -C /usr/local/bin && \
+    curl -o /usr/local/bin/opa -L https://github.com/open-policy-agent/opa/releases/download/v${OPA_VERSION}/opa_linux_amd64_static && \
+    chmod +x /usr/local/bin/opa /usr/local/bin/conftest
+
+
 USER ${USERID}
