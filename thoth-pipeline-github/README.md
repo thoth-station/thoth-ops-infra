@@ -1,0 +1,3 @@
+# Thoth Pipeline: GitHub
+
+This is a container based on RHEL UBI8, just added git and gh. It could be used to create GitHub releases...
