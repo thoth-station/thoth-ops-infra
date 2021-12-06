@@ -1,4 +1,4 @@
-FROM  quay.io/thoth-station/s3i-thoth-ubi8-py38:v0.32.1
+FROM  quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.1
 
 ENV SUMMARY="s2i based container for jupyterbook build." \
     DESCRIPTION="s2i based container for jupyterbook build."
