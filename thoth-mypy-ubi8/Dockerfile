@@ -1,4 +1,4 @@
-FROM quay.io/thoth-station/s2i-thoth-ubi8-py36:v0.20.1
+FROM quay.io/thoth-station/s2i-thoth-ubi8-py36:v0.32.1
 
 ENV SUMMARY="Thoth's toolchain for mypy." \
     DESCRIPTION="Thoth's toolchain for mypy."
@@ -9,7 +9,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="Thoth Python 3.6-ubi8 mypy" \
     io.openshift.tags="python,python36,mypy" \
     name="thoth-station/thoth-mypy:ubi8" \
-    version="0.12.1"
+    version="0.14.0"
 
 USER 0
 COPY ./ /tmp/src-thoth-mypy
