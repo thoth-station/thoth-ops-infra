@@ -1,4 +1,4 @@
-FROM quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.0
+FROM quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.3
 
 
 ENV SUMMARY="Thoth's toolchain for running pre-commit hooks." \
@@ -10,7 +10,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="Thoth Python 3.8-ubi8 Pre-Commit" \
     io.openshift.tags="python,python38,pre-commit" \
     name="thoth-station/thoth-pre-commit:ubi8" \
-    version="0.14.0"
+    version="0.14.3"
 
 USER 0
 COPY ./ /tmp/src-thoth-precommit

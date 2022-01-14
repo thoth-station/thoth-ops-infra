@@ -1,4 +1,4 @@
-FROM  quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.1
+FROM  quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.3
 
 ENV SUMMARY="s2i based container for jupyterbook build." \
     DESCRIPTION="s2i based container for jupyterbook build."
@@ -9,7 +9,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="s2i-jupyterbook" \
     io.openshift.tags="python,python38,s2i-httpd,jupyterbook" \
     name="thoth-station/s2i-jupyterbook" \
-    version="0.14.0"
+    version="0.14.3"
 
 USER 0
 COPY ./ /tmp/s2i-jupyterbook

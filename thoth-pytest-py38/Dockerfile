@@ -1,4 +1,4 @@
-FROM quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.1
+FROM quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.3
 
 ENV SUMMARY="Thoth's toolchain for pytest." \
     DESCRIPTION="Thoth's toolchain for pytest."
@@ -9,7 +9,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="Thoth Python 3.8-ubi8 pytest" \
     io.openshift.tags="python,python38,pytest" \
     name="thoth-station/thoth-pytest-ubi8-py38" \
-    version="0.14.0"
+    version="0.14.2"
 
 USER 0
 COPY ./ /tmp/src-thoth-pytest
