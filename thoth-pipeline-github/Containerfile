@@ -1,0 +1,18 @@
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.5-204
+
+ENV SUMMARY="Thoth Pipeline: GitHub utilities." \
+        DESCRIPTION="Thoth Pipeline interacts with GitHub, this container image includes all the utilities required."
+
+LABEL summary="$SUMMARY" \
+        description="$DESCRIPTION" \
+        io.k8s.description="$DESCRIPTION" \
+        io.k8s.display-name="Thoth Pipeline: GitHut utilities" \
+        io.openshift.tags="thoth,meteor,pipeline,github,tekton" \
+        name="thoth-station/thoth-pipeline-github"
+
+USER 0
+RUN INSTALL_PKGS="git" && \
+        microdnf install --nodocs -y $INSTALL_PKGS && \
+        rpm --install --verbose https://github.com/cli/cli/releases/download/v2.2.0/gh_2.2.0_linux_amd64.rpm
+
+USER ${USERID}
