@@ -1,4 +1,4 @@
-FROM  quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.32.3
+FROM  quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.29.0
 
 ENV SUMMARY="s2i based container for thoth development ops." \
     DESCRIPTION="s2i based container for thoth development ops."
