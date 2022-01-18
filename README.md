@@ -21,6 +21,7 @@ Thoth-Ops Images       | Status     | Image Link/Status
 ---------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 s2i-jupyterbook        | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/s2i-jupyterbook/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/s2i-jupyterbook)
 s2i-thoth-dev          | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/s2i-thoth-dev/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/s2i-thoth-dev)
+twine                  | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/twine/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/twine)
 thoth-pipeline-github  | current    |
 thoth-precommit-py38   | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/thoth-precommit-py38/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/thoth-precommit-py38)
 thoth-precommit-py36   | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/thoth-precommit/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/thoth-precommit)
