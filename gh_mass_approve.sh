@@ -3,7 +3,7 @@
 pr_to_be_approved=$(
         gh api graphql --paginate -f query='
 {
-  search(query: "org:thoth-station in:title Enable TLS", type: ISSUE, first: 100) {
+  search(query: "org:thoth-station in:title Enable TLS is:open", type: ISSUE, first: 100) {
     nodes {
       ... on PullRequest {
         number
