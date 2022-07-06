@@ -9,7 +9,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="s2i-jupyterbook" \
     io.openshift.tags="python,python38,s2i-httpd,jupyterbook" \
     name="thoth-station/s2i-jupyterbook" \
-    version="0.14.3"
+    version="0.14.4"
 
 USER 0
 COPY ./ /tmp/s2i-jupyterbook
