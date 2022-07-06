@@ -16,14 +16,6 @@
         ]
     },
     "default": {
-        "backports.entry-points-selectable": {
-            "hashes": [
-                "sha256:988468260ec1c196dab6ae1149260e2f5472c9110334e5d51adcb77867361f6a",
-                "sha256:a6d9a871cde5e15b4c4a53e3d43ba890cc6861ec1332c9c2428c92f977192acc"
-            ],
-            "markers": "python_version >= '2.7'",
-            "version": "==1.1.0"
-        },
         "cfgv": {
             "hashes": [
                 "sha256:c6a0883f3917a037485059700b9e75da2464e6c27051014ad85ba6aaa5884426",
@@ -34,49 +26,50 @@
         },
         "distlib": {
             "hashes": [
-                "sha256:c8b54e8454e5bf6237cc84c20e8264c3e991e824ef27e8f1e81049867d861e31",
-                "sha256:d982d0751ff6eaaab5e2ec8e691d949ee80eddf01a62eaa96ddb11531fe16b05"
+                "sha256:6564fe0a8f51e734df6333d08b8b94d4ea8ee6b99b5ed50613f731fd4089f34b",
+                "sha256:e4b58818180336dc9c529bfb9a0b58728ffc09ad92027a3f30b7cd91e3458579"
             ],
-            "version": "==0.3.3"
+            "version": "==0.3.4"
         },
         "filelock": {
             "hashes": [
-                "sha256:2b5eb3589e7fdda14599e7eb1a50e09b4cc14f34ed98b8ba56d33bfaafcbef2f",
-                "sha256:34a9f35f95c441e7b38209775d6e0337f9a3759f3565f6c5798f19618527c76f"
+                "sha256:37def7b658813cda163b56fc564cdc75e86d338246458c4c28ae84cabefa2404",
+                "sha256:3a0fd85166ad9dbab54c9aec96737b744106dc5f15c0b09a6744a445299fcf04"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==3.3.1"
+            "markers": "python_version >= '3.7'",
+            "version": "==3.7.1"
         },
         "identify": {
             "hashes": [
-                "sha256:d1e82c83d063571bb88087676f81261a4eae913c492dafde184067c584bc7c05",
-                "sha256:fd08c97f23ceee72784081f1ce5125c8f53a02d3f2716dde79a6ab8f1039fea5"
+                "sha256:0dca2ea3e4381c435ef9c33ba100a78a9b40c0bab11189c7cf121f75815efeaa",
+                "sha256:3d11b16f3fe19f52039fb7e39c9c884b21cb1b586988114fbe42671f03de3e82"
             ],
-            "markers": "python_full_version >= '3.6.1'",
-            "version": "==2.3.0"
+            "markers": "python_version >= '3.7'",
+            "version": "==2.5.1"
         },
         "nodeenv": {
             "hashes": [
-                "sha256:3ef13ff90291ba2a4a7a4ff9a979b63ffdd00a464dbe04acf0ea6471517a4c2b",
-                "sha256:621e6b7076565ddcacd2db0294c0381e01fd28945ab36bcf00f41c5daf63bef7"
+                "sha256:27083a7b96a25f2f5e1d8cb4b6317ee8aeda3bdd121394e5ac54e498028a042e",
+                "sha256:e0e7f7dfb85fc5394c6fe1e8fa98131a2473e04311a45afb6508f7cf1836fa2b"
             ],
-            "version": "==1.6.0"
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'",
+            "version": "==1.7.0"
         },
         "platformdirs": {
             "hashes": [
-                "sha256:367a5e80b3d04d2428ffa76d33f124cf11e8fff2acdaa9b43d545f5c7d661ef2",
-                "sha256:8868bbe3c3c80d42f20156f22e7131d2fb321f5bc86a2a345375c6481a67021d"
+                "sha256:027d8e83a2d7de06bbac4e5ef7e023c02b863d7ea5d079477e722bb41ab25788",
+                "sha256:58c8abb07dcb441e6ee4b11d8df0ac856038f944ab98b7be6b27b2a3c7feef19"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==2.4.0"
+            "markers": "python_version >= '3.7'",
+            "version": "==2.5.2"
         },
         "pre-commit": {
             "hashes": [
-                "sha256:3c25add78dbdfb6a28a651780d5c311ac40dd17f160eb3954a0c59da40a505a7",
-                "sha256:a4ed01000afcb484d9eb8d504272e642c4c4099bbad3a6b27e519bd6a3e928a6"
+                "sha256:10c62741aa5704faea2ad69cb550ca78082efe5697d6f04e5710c3c229afdd10",
+                "sha256:4233a1e38621c87d9dda9808c6606d7e7ba0e087cd56d3fe03202a01d2919615"
             ],
             "index": "pypi",
-            "version": "==2.15.0"
+            "version": "==2.19.0"
         },
         "pyyaml": {
             "hashes": [
@@ -117,12 +110,20 @@
             "markers": "python_version >= '3.6'",
             "version": "==6.0"
         },
+        "setuptools": {
+            "hashes": [
+                "sha256:16923d366ced322712c71ccb97164d07472abeecd13f3a6c283f6d5d26722793",
+                "sha256:db3b8e2f922b2a910a29804776c643ea609badb6a32c4bcc226fd4fd902cce65"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==63.1.0"
+        },
         "six": {
             "hashes": [
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==1.16.0"
         },
         "toml": {
@@ -130,16 +131,16 @@
                 "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
                 "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==0.10.2"
         },
         "virtualenv": {
             "hashes": [
-                "sha256:10062e34c204b5e4ec5f62e6ef2473f8ba76513a9a617e873f1f8fb4a519d300",
-                "sha256:bcc17f0b3a29670dd777d6f0755a4c04f28815395bca279cdcb213b97199a6b8"
+                "sha256:288171134a2ff3bfb1a2f54f119e77cd1b81c29fc1265a2356f3e8d14c7d58c4",
+                "sha256:b30aefac647e86af6d82bfc944c556f8f1a9c90427b2fb4e3bfbf338cb82becf"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==20.8.1"
+            "version": "==20.15.1"
         }
     },
     "develop": {}

@@ -10,7 +10,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="Thoth Python 3.8-ubi8 Pre-Commit" \
     io.openshift.tags="python,python38,pre-commit" \
     name="thoth-station/thoth-pre-commit:ubi8" \
-    version="0.14.3"
+    version="0.14.4"
 
 USER 0
 COPY ./ /tmp/src-thoth-precommit
