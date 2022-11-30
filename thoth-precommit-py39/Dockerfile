@@ -7,7 +7,7 @@ LABEL summary="$SUMMARY" \
     description="$DESCRIPTION" \
     io.k8s.description="$DESCRIPTION" \
     io.k8s.display-name="Thoth Python 3.9-ubi9 Pre-Commit" \
-    io.openshift.tags="python,python38,pre-commit" \
+    io.openshift.tags="python,python39,pre-commit" \
     name="thoth-station/thoth-pre-commit:ubi9" \
     version="0.16.0"
 
