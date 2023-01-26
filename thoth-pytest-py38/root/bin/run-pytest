@@ -11,7 +11,7 @@ if [[ -f setup.py ]]; then
     else
         micropipenv install --dev > /dev/null
     fi
-    python3 setup.py test 2>&1
+    pytest
 fi
 
 #end.
