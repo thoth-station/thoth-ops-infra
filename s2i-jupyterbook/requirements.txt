@@ -293,9 +293,9 @@ latexcodec==2.0.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 
 linkify-it-py==1.0.3; python_version >= '3.6' \
     --hash=sha256:11e29f00150cddaa8f434153f103c14716e7e097a8fd372d9eb1ed06ed91524d \
     --hash=sha256:2b3f168d5ce75e3a425e34b341a6b73e116b5d9ed8dbbbf5dc7456843b7ce2ee
-markdown-it-py==0.6.2; python_version ~= '3.6' \
-    --hash=sha256:30b3e9f8198dc82a5df0dcb73fd31d56cd9a43bf8a747feb10b2ba74f962bcb1 \
-    --hash=sha256:c3b9f995be0792cbbc8ab2f53d74072eb7ff8a8b622be8d61d38ab879709eca3
+markdown-it-py==2.2.0; python_version ~= '3.6' \
+    --hash=sha256:5a35f8d1870171d9acc47b99612dc146129b631baf04970128b568f190d0cc30 \
+    --hash=sha256:7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1
 markupsafe==2.1.1; python_version >= '3.7' \
     --hash=sha256:0212a68688482dc52b2d45013df70d169f542b7394fc744c02a57374a4207003 \
     --hash=sha256:089cf3dbf0cd6c100f02945abeb18484bd1ee57a079aefd52cffd17fba910b88 \
