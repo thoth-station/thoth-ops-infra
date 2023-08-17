@@ -1,0 +1,30 @@
+FROM registry.fedoraproject.org/fedora:37
+
+ENV SUMMARY="Thoth's toolchain for running pre-commit hooks." \
+    DESCRIPTION="Thoth's toolchain for running pre-commit hooks."
+
+LABEL summary="$SUMMARY" \
+    description="$DESCRIPTION" \
+    io.k8s.description="$DESCRIPTION" \
+    io.k8s.display-name="Thoth Pre-Commit" \
+    io.openshift.tags="pre-commit" \
+    name="thoth-station/thoth-pre-commit" \
+    version="0.16.0"
+
+RUN dnf update -y \
+        --setopt=tsflags=nodocs && \
+    dnf install -y \
+        --setopt=tsflags=nodocs \
+        --setopt=deltarpm=false \
+        findutils \
+        python3.12-devel \
+        python3.12-tkinter \
+        python3-pip \
+        gcc \
+        gcc-c++ \
+        git-core \
+        make && \
+    dnf clean all && \
+    pip install pre-commit
+
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
