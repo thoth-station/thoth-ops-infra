@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+if [ -z $GOPATH ]; then
+    echo "GOPATH is not set"
+    exit 1
+fi
+
+if [ -z $REPO_OWNER ]; then
+    echo "REPO_OWNER is not set"
+    exit 1
+fi
+
+if [ -z $REPO_NAME ]; then
+    echo "REPO_NAME is not set"
+    exit 1
+fi
+
+cd $GOPATH/src/github.com/$REPO_OWNER/$REPO_NAME
+export HOME=$(pwd)
+
+pre-commit run --all-files
