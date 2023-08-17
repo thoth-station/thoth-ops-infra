@@ -1,7 +1,9 @@
-FROM registry.fedoraproject.org/fedora:37
+FROM registry.fedoraproject.org/fedora:38
 
 ENV SUMMARY="Thoth's toolchain for running pre-commit hooks." \
-    DESCRIPTION="Thoth's toolchain for running pre-commit hooks."
+    DESCRIPTION="This is part of Thoth's toolchain for running pre-commit hooks, and it is supposed to run as a Prow presubmit job."
+
+LABEL maintainer="Christoph Görn <goern@b4mad.net>"
 
 ENV PATH=$HOME/.local/bin/:$PATH \
     PYTHONUNBUFFERED=1 \
@@ -15,8 +17,8 @@ LABEL summary="$SUMMARY" \
     io.k8s.description="$DESCRIPTION" \
     io.k8s.display-name="Thoth Pre-Commit" \
     io.openshift.tags="pre-commit" \
-    name="thoth-station/thoth-pre-commit" \
-    version="0.16.2"
+    name="thoth-station/pre-commit" \
+    version="0.16.8"
 
 RUN dnf update -y \
         --setopt=tsflags=nodocs && \
@@ -31,5 +33,11 @@ RUN dnf update -y \
         gcc-c++ \
         git-core \
         make && \
-    dnf clean all && \
-    pip install pre-commit
+    dnf clean all
+RUN pip install --no-cache-dir pre-commit
+
+ADD prow-job-precommit /usr/bin
+
+WORKDIR /src
+
+CMD ["/usr/bin/prow-job-precommit"]
