@@ -3,13 +3,20 @@ FROM registry.fedoraproject.org/fedora:37
 ENV SUMMARY="Thoth's toolchain for running pre-commit hooks." \
     DESCRIPTION="Thoth's toolchain for running pre-commit hooks."
 
+ENV PATH=$HOME/.local/bin/:$PATH \
+    PYTHONUNBUFFERED=1 \
+    PYTHONIOENCODING=UTF-8 \
+    LC_ALL=C_US.UTF-8 \
+    LANG=C_US.UTF-8 \
+    PIP_NO_CACHE_DIR=off
+
 LABEL summary="$SUMMARY" \
     description="$DESCRIPTION" \
     io.k8s.description="$DESCRIPTION" \
     io.k8s.display-name="Thoth Pre-Commit" \
     io.openshift.tags="pre-commit" \
     name="thoth-station/thoth-pre-commit" \
-    version="0.16.0"
+    version="0.16.2"
 
 RUN dnf update -y \
         --setopt=tsflags=nodocs && \
@@ -26,5 +33,3 @@ RUN dnf update -y \
         make && \
     dnf clean all && \
     pip install pre-commit
-
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
