@@ -1,5 +1,11 @@
 # Changelog for Thoth's Python tool chain
 
+## [0.17.0] - 2023-Sept-09 - goern
+
+### Changes
+
+Deprecating the use of the CHANGELOG
+
 ## [0.10.0] - 2020-Mar-05 - goern & harshad
 
 ### Changes
@@ -18,7 +24,7 @@ All tools have been updated to their current version, this does include `black`,
 
 Thoth's Zuul infrastructure for the [AICoE](https://github.com/AICoE) and [Thoth-Station](https://github.com/thoth-station) is using these released now!
 
-Please report any issues to https://github.com/thoth-station/zuul-infra/issues
+Please report any issues to <https://github.com/thoth-station/zuul-infra/issues>
 
 ## [0.9.0] - 2019-Aug-27 - goern
 
