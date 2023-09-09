@@ -20,7 +20,6 @@ The _Status_ indicates if Thoth Station is keeping the image current and up-to-d
 | Thoth-Ops Images       | Status     | Image Link/Status                                                                                                                                                                                   |
 | ---------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | s2i-thoth-dev          | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/s2i-thoth-dev/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/s2i-thoth-dev)                   |
-| twine                  | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/twine/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/twine)                                   |
 | thoth-pipeline-github  | current    |
 | thoth-precommit-py39   | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/thoth-precommit-py39/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/thoth-precommit-py39)     |
 | thoth-precommit-py38   | current    | [![Docker Repository on Quay](https://quay.io/repository/thoth-station/thoth-precommit-py38/status "Docker Repository on Quay")](https://quay.io/repository/thoth-station/thoth-precommit-py38)     |
