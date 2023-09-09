@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:38
+FROM quay.io/fedora/fedora@sha256:1972716109b1c906120061063bd4cb50a46c2138d95002ccb90126928d98e013
 
 ENV SUMMARY="Thoth's toolchain for running pre-commit hooks." \
     DESCRIPTION="This is part of Thoth's toolchain for running pre-commit hooks, and it is supposed to run as a Prow presubmit job."
@@ -18,7 +18,7 @@ LABEL summary="$SUMMARY" \
     io.k8s.display-name="Thoth Pre-Commit" \
     io.openshift.tags="pre-commit" \
     name="thoth-station/pre-commit" \
-    version="0.16.8"
+    version="0.17.0"
 
 RUN dnf update -y \
         --setopt=tsflags=nodocs && \
@@ -26,8 +26,7 @@ RUN dnf update -y \
         --setopt=tsflags=nodocs \
         --setopt=deltarpm=false \
         findutils \
-        python3.12-devel \
-        python3.12-tkinter \
+        python3.10-devel \
         python3-pip \
         gcc \
         gcc-c++ \
